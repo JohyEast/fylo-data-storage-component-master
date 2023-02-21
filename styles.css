@@ -60,9 +60,13 @@ body {
  border-radius: 10px;
  color: white;
  position: relative;
+ padding: 1rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ gap: 1rem;
 }
-.barra--desplazamiento {
-}
+
 .pestania {
  width: 7rem;
  height: 3rem;
@@ -74,4 +78,34 @@ body {
  position: absolute;
  right: 1rem;
  top: -2.5rem;
+}
+
+.triangulo {
+ width: 0;
+ height: 0;
+ border-top: 1rem solid white;
+ border-right: 0.8rem solid transparent;
+ border-left: 0.5rem solid transparent;
+ position: absolute;
+ right: 1.5rem;
+ top: 5%;
+}
+.barra {
+ display: flex;
+}
+.barra--desp {
+ width: 15rem;
+ height: 0.8rem;
+ background-image: linear-gradient(
+  to right,
+  hsl(6, 100%, 80%),
+  hsl(335, 100%, 65%)
+ );
+ border-radius: 20px;
+}
+.barra--desp2 {
+ width: 10rem;
+ height: 0.8rem;
+ background-color: white;
+ border-radius: 20px;
 }
