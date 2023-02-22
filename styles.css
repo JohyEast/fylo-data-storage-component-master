@@ -93,6 +93,8 @@ body {
 }
 .barra {
  display: flex;
+ background-color: white;
+ border-radius: 20px;
 }
 .barra--desp {
  width: 15rem;
@@ -103,10 +105,17 @@ body {
   hsl(335, 100%, 65%)
  );
  border-radius: 20px;
+ position: relative;
 }
-.barra--desp2 {
- width: 10rem;
+.barra--desp::before {
+ content: "";
+ display: block;
  height: 0.8rem;
+ width: 0.8rem;
+ border-radius: 50%;
  background-color: white;
- border-radius: 20px;
+ border: 1px solid rgb(8, 8, 53);
+ position: absolute;
+ right: 0;
+ box-sizing: border-box;
 }
